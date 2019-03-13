@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/cirImg"
+            android:src="@mipmap/img"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="山高水长"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/singer"
+            android:text="中山大学合唱团"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentTime"
+            android:text="00:00"
+            />
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endTime"
+            android:text="00:00"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/file"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/file"
+            android:layout_alignParentStart="true"/>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/playView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/play"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/stopView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/stop"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/quitView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/back"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

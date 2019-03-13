@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>食品</item>
+        <item>衣着</item>
+        <item>居住</item>
+        <item>家庭设备用品及服务</item>
+        <item>医疗保健</item>
+        <item>交通和通信</item>
+        <item>教育文化娱乐服务</item>
+        <item>其他商品和服务</item>
+    </string-array>
+
+    <string name="app_name">Bill</string>
+</resources>

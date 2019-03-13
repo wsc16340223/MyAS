@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">APP1</string>
+    <string name="empty">搜索内容不能为空</string>
+    <string name="yes">对话框“确定”按钮被点击</string>
+    <string name="no">对话框“取消”按钮被点击</string>
+    <string name="image1">图片被选中</string>
+    <string name="image2">图片搜索成功</string>
+    <string name="video1">视频被选中</string>
+    <string name="video2">视频搜索成功</string>
+    <string name="question1">问答被选中</string>
+    <string name="question2">问答搜索成功</string>
+    <string name="message1">资讯被选中</string>
+    <string name="message2">资讯搜索成功</string>
+    <string name="failed">搜索失败</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:scaleType="fitXY"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/InfoStyle"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/picture"
+        app:layout_constraintTop_toTopOf="@id/picture"/>
+
+    <TextView
+        android:id="@+id/type"
+        style="@style/InfoStyle"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintStart_toEndOf="@id/picture" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/picture"/>
+
+</android.support.constraint.ConstraintLayout>

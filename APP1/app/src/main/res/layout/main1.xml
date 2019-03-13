@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="中山大学智慧健康服务平台"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/sysu"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入搜索内容"
+            android:textAlignment="center"
+            android:textSize="18sp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:id="@+id/button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/RG"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片"
+            android:id="@+id/RB1"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:checked="true"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频"
+            android:id="@+id/RB2"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问答"
+            android:id="@+id/RB3"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资讯"
+            android:id="@+id/RB4"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+
+            />
+    </RadioGroup>
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
